@@ -1,4 +1,47 @@
-html{
-    height: 100%;
-    overflow: hidden;
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body{
+
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
 }
+
+.container {
+    max-width: 1750px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.btn {
+}
+
+
+.header {
+    background-image: url(./images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+.header__top {
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    
+    align-items: center;
+    column-gap: 118px;
+}
+.link {
+    color: #114455;
+    font-size: 20px;
+    font-weight: 800;
+    trans
+}
+
