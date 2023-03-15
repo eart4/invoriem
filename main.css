@@ -4,6 +4,8 @@ body{
 
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
+    font-size: 28px;
+    line-height: 44px;
 }
 
 .container {
@@ -11,7 +13,17 @@ body{
     padding: 0 15px;
     margin: 0 auto;
 }
+
+
 .btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 1px solid #114455;
+    border-radius: 2px;
+    color: #114455;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
 }
 
 
@@ -26,6 +38,7 @@ body{
 .header__top {
     padding-top: 44px;
     padding-bottom: 44px;
+    margin-bottom: 126px;
 }
 .nav {
     display: flex;
@@ -42,6 +55,32 @@ body{
     color: #114455;
     font-size: 20px;
     font-weight: 800;
-    trans
+    text-decoration: none;
+}
+
+.header__content {
+    max-width: 1060px;
+}
+.header__title {
+    max-width: 734px;
+    
+
+font-size: 80px;
+line-height: 94px;
+color: #114455;
+margin-bottom: 48px;
+}
+.header__text p{
+    font-size: 34px;
+    color: #1f1f1f;
+    margin-bottom: 72px;
+}
+
+.header__text p + p{
+    margin-top: 1em;
+}
+.header__btn {
+}
+.btn {
 }
 
