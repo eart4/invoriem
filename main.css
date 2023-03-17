@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-
 body{
 
     font-family: 'Work Sans', sans-serif;
@@ -131,9 +130,28 @@ margin-bottom: 48px;
 .header__text p + p{
     margin-top: 1em;
 }
-.header__btn {
+
+.case-studies {
+    padding: 184px 0;
 }
-.btn {
+.container {
+}
+.case-studies__title {
+    font-size: 80px;
+    line-height: 94px;
+    color: #1F1F1F;
+    margin-bottom: 12px;
+}
+.title {
+    font-weight: 800px;
+    font-size: 80px;
+    line-height: 94px;
+    color: #1F1F1F;
+}
+.case-studies__text {
+    margin-bottom: 100px;
+}
+.text {
 }
 
 
