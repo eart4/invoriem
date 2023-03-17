@@ -16,6 +16,7 @@ body{
 
 
 .btn {
+    position: relative;
     display: inline-block;
     padding: 10px 24px;
     border: 1px solid #114455;
@@ -24,6 +25,57 @@ body{
     font-size: 20px;
     font-weight: 800;
     text-decoration: none;
+    padding-right: 72px;
+    transition: .3s;
+    
+}
+
+.btn--big{
+    padding: 14px 32px;
+    padding-right: 80px;
+}
+.btn--dark{
+    cursor: pointer;
+    background-color: #114455;
+    color: white;
+}
+
+.btn--dark::after{
+    background-image: url('./images/arr.svg') !important;
+    transition: .3s;
+    
+}
+
+.btn::after{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('./images/arr-blck.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s;
+}
+
+.btn:hover::after{
+    background-image: url('./images/arr.svg') ;
+}
+
+.btn:hover{
+    background-color: #114455;
+    color: white;
+}
+
+.btn--dark:hover::after{
+    background-image: url('./images/arr-blck.svg') !important;
+}
+
+.btn--dark:hover{
+    background-color: white;
+    color: #114455;
 }
 
 
@@ -83,4 +135,5 @@ margin-bottom: 48px;
 }
 .btn {
 }
+
 
