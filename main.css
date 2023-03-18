@@ -133,14 +133,12 @@ margin-bottom: 48px;
 
 .case-studies {
     padding: 184px 0;
+    
 }
-.container {
-}
+
 .case-studies__title {
-    font-size: 80px;
-    line-height: 94px;
-    color: #1F1F1F;
     margin-bottom: 12px;
+    
 }
 .title {
     font-weight: 800px;
@@ -150,8 +148,12 @@ margin-bottom: 48px;
 }
 .case-studies__text {
     margin-bottom: 100px;
+    max-width: 1070px;
 }
 .text {
+    font-size: 28px;
+    line-height: 44px;
+    color: #1F1F1F;
 }
 
 
