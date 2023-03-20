@@ -50,6 +50,11 @@ a {
     background:transparent;
 }
 
+img {
+	vertical-align: top;
+}
+
+
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;
