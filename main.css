@@ -508,6 +508,11 @@ line-height: 24px;
         font-size: 16px;
 line-height: 24px;
 	}
+        .video{
+            overflow: hidden;
+
+            height: 459px;
+        }
 
         .video__btn{
             width: 48px;
@@ -518,6 +523,15 @@ line-height: 24px;
             width: 100%;
         }
 
-
+        .video__object {
+            
+            position: absolute;
+            left: -50%;
+            top: 0;
+            width: 900px;
+            
+            vertical-align: top;
+            
+        }
 
 }
