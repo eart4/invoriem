@@ -7,6 +7,10 @@ body{
     line-height: 44px;
 }
 
+.html{
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 1750px;
     padding: 0 15px;
@@ -95,6 +99,7 @@ img{
 
 
 .header {
+    position: relative;
     background-image: url(./images/header-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,6 +115,7 @@ img{
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav__list {
@@ -118,11 +124,19 @@ img{
     align-items: center;
     column-gap: 118px;
 }
+
+.nav__btn{
+    display: none;
+}
 .link {
     color: #114455;
     font-size: 20px;
     font-weight: 800;
     text-decoration: none;
+}
+
+.header__content-mobile{
+    display: none;
 }
 
 .header__content {
@@ -141,10 +155,18 @@ margin-bottom: 48px;
     font-size: 34px;
     color: #1f1f1f;
     margin-bottom: 72px;
+    line-height: 1.57;
 }
 
 .header__text p + p{
     margin-top: 1em;
+}
+
+.header__arrows{
+    position: absolute;
+    bottom: 59px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .case-studies {
@@ -174,6 +196,15 @@ margin-bottom: 48px;
 
 .container-right{
     padding-left: calc((100% - 1750px)/ 2);
+    overflow-x: hidden;
+}
+
+@media (max-widtj: 1749px) {
+    .container-right{
+        padding-left: 15px;
+        overflow-x: hidden;
+    }
+    
 }
 
 
@@ -273,6 +304,7 @@ margin-bottom: 48px;
 .footer__nav {
     display: flex;
     column-gap: 104px;
+    
 }
 
 .footer__socials {
@@ -282,3 +314,133 @@ margin-bottom: 48px;
 
 
 
+@media(max-width: 1000px) {
+    .header__title{
+        font-size: 50px;
+        margin-bottom: 28px;
+    }
+    .header__text{
+        font-size: 24px;
+        margin-bottom: 52px;
+    }
+
+    .nav__list{
+        column-gap: 50px;
+    }
+
+   
+
+	.slider {
+		width: 1300px;
+	}
+
+	.slide {
+		padding-left: 50px;
+	}
+
+	.slide__img {
+		width: 336px;
+		height: 396px;
+	}
+
+	.slide__title {
+		bottom: 32px;
+		font-size: 80px;
+		background: linear-gradient(90deg, rgba(17, 68, 85, 1) 50px, rgba(255, 255, 255, 1) 50px);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+    
+}
+
+
+@media(max-width: 600px) {
+    .nav__logo{
+        min-width: 109px;
+        margin-left: 9px;
+    }
+
+    .nav__list{
+        display: none;
+    }
+
+    .nav__btn{
+        display: block;
+    }
+
+    .header__content-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 27px;
+
+        color: rgba(31, 31, 31, 0.7);
+        font-size: 16px;
+    line-height: 24px;
+    }
+
+    .header__content-mobile p{
+        text-align: center;
+        width: 237px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        letter-spacing: 0.06em;
+    }
+
+    
+
+    .header__logo-mobile{
+        width: 244px;
+    }
+
+    .header__content{
+        display: none;
+
+    }
+
+    .header__arrows{
+        width: 19px;
+        height: 16px;
+        bottom: 32px;
+    }
+
+    .case-studies{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .case-studies__title{
+        margin-bottom: 7px ;
+        
+    }
+    .title{
+        line-height: 38px;
+        font-size: 32px;
+    }
+    .case-studies__text{
+        font-size: 16px;
+        margin-bottom: 31px;
+        line-height: 24px;
+        letter-spacing: 0.06em;
+    }
+	.slider {
+		width: 546px;
+	}
+
+	.slide {
+		padding-left: 33px;
+	}
+
+	.slide__img {
+		width: 224px;
+		height: 264px;
+	}
+
+	.slide__title {
+		bottom: 22px;
+		font-size: 60px;
+		background: linear-gradient(90deg, rgba(17, 68, 85, 1) 33px, rgba(255, 255, 255, 1) 33px);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
