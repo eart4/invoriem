@@ -25,6 +25,10 @@ body{
     visibility: hidden;
 }
 
+.no-scroll{
+   overflow-y: hidden; 
+}
+
 button{
     padding: 0;
     background-color: transparent;
@@ -322,12 +326,13 @@ margin-bottom: 48px;
     justify-content: space-between;
     display: none;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
+    z-index: 99;
     left: 0;
     top: 0;
     width: 100%;
     min-height: 100vh;
-    padding: 50px 0px 32px;
+    padding: 44px 0px 32px;
     row-gap: 30px;
 }
 

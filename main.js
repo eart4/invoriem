@@ -54,4 +54,18 @@ $(document).ready(function(){
         videoBtn.classList.remove('none');
         video.pause()
     }
-  })
+  });
+
+  const mobileNav = document.querySelector('#mobileNav')
+  const openNavbtn = document.querySelector('#openMobileNav');
+  const closeNavbtn = document.querySelector('#closeMobileNav');
+ 
+  openMobileNav.onclick = function(){
+    mobileNav.classList.remove('none')
+    document.body.classList.add('no-scroll')
+  }
+
+  closeMobileNav.onclick = function(){
+    document.body.classList.remove('no-scroll')
+    mobileNav.classList.add('none')
+  }
