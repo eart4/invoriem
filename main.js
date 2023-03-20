@@ -49,7 +49,7 @@ $(document).ready(function(){
 
         video.play()
     }else{
-        videoPicture.classList.remove('none');
+        videoPicture.classList.remove('hidden');
         videoWrapper.classList.add('video-overlay')
         videoBtn.classList.remove('none');
         video.pause()
