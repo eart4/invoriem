@@ -248,5 +248,37 @@ margin-bottom: 48px;
 	
 }
 
+.footer {
+    padding-top: 162px;
+    padding-bottom: 82px;
+    letter-spacing: 0.04em;
+    font-size: 20px;
+    line-height: 36px;
+    color: rgba(31, 31, 31, 0.7);
+}
+.footer__row{
+    display: flex;
+    justify-content: space-between;
+}
+.footer a{
+    letter-spacing: 0.04em;
+    font-size: 20px;
+    line-height: 36px;
+    color: rgba(31, 31, 31, 0.7);
+    text-decoration: none;
+}
+
+
+
+.footer__nav {
+    display: flex;
+    column-gap: 104px;
+}
+
+.footer__socials {
+    display: flex;
+    column-gap: 26px;
+}
+
 
 
