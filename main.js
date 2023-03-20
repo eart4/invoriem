@@ -12,7 +12,7 @@ $(document).ready(function(){
 			},
 			// breakpoint from 480 up
 			601: {
-				items: 3,
+				items: 2,
 				margin: 32,
 				loop: true,
 				dots: false,
@@ -42,7 +42,7 @@ $(document).ready(function(){
   videoWrapper.addEventListener('click', function (){
     if(video.paused) {
 
-    videoPicture.classList.add('none');
+    videoPicture.classList.add('hidden');
     videoWrapper.classList.remove('video-overlay')
     videoBtn.classList.add('none');
 
